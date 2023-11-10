@@ -1,4 +1,4 @@
-# Flutter Valorant
+# Space Travel Booking App
 
 Space Traveling App made with flutter + clipper and lottie
 
