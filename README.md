@@ -1,16 +1,36 @@
-# space_x
+# Space Travel Booking App
 
-A new Flutter project.
+Space Traveling App made with flutter + clipper and lottie
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Screenshots
+<img width="300" src="https://firebasestorage.googleapis.com/v0/b/instagram-clone-cf306.appspot.com/o/space%2F1.jpg?alt=media&token=8df5ea36-b86a-4bdf-951e-7784c9a73079">  .
+<img width="300" src="https://firebasestorage.googleapis.com/v0/b/instagram-clone-cf306.appspot.com/o/space%2F2.jpg?alt=media&token=8df5ea36-b86a-4bdf-951e-7784c9a73079">  .
+<img width="300" src="https://firebasestorage.googleapis.com/v0/b/instagram-clone-cf306.appspot.com/o/space%2F3.jpg?alt=media&token=8df5ea36-b86a-4bdf-951e-7784c9a73079">  .
+<img width="300" src="https://firebasestorage.googleapis.com/v0/b/instagram-clone-cf306.appspot.com/o/space%2F4.jpg?alt=media&token=8df5ea36-b86a-4bdf-951e-7784c9a73079">  .
+<img width="300" src="https://firebasestorage.googleapis.com/v0/b/instagram-clone-cf306.appspot.com/o/space%2F5.jpg?alt=media&token=8df5ea36-b86a-4bdf-951e-7784c9a73079">  .
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Authors
+
+- [@Justin Roy](https://www.linkedin.com/in/justin-roy-4817551ba/)
+
+
+## Badges
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
+
+## Support
+
+For support, Give a star ⭐ to repo.
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at [LinkedIn](https://www.linkedin.com/in/justin-roy-4817551ba/)
+
