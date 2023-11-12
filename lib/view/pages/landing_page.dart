@@ -37,8 +37,17 @@ class _LandingPageState extends State<LandingPage> {
           _LandingViewWidget(
             onLongPress: () => Navigator.pushAndRemoveUntil(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => const BookingPage(),
+                PageRouteBuilder(
+                  transitionDuration: const Duration(milliseconds: 700),
+                  reverseTransitionDuration: const Duration(milliseconds: 700),
+                  pageBuilder: (context, animation, secondaryAnimation) =>
+                      const BookingPage(),
+                  transitionsBuilder:
+                      (context, animation, secondaryAnimation, child) =>
+                          FadeTransition(
+                    opacity: animation,
+                    child: child,
+                  ),
                 ),
                 (route) => false),
           ),
@@ -98,10 +107,13 @@ class _RocketImageWidget extends StatelessWidget {
         alignment: Alignment.center,
         children: [
           Center(
-            child: Image.asset(
-              'assets/images/rocket.png',
-              color: Colors.white,
-              height: size.width,
+            child: Hero(
+              tag: 'rocket',
+              child: Image.asset(
+                'assets/images/rocket.png',
+                color: Colors.white,
+                height: size.width,
+              ),
             ),
           ),
           Positioned(

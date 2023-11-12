@@ -58,6 +58,14 @@ class CommonBloc extends Cubit<CommonState> {
 
   Future<void> updateDate(BuildContext context) async {
     final DateTime? picked = await showDatePicker(
+        builder: (context, child) {
+          return Theme(
+            data: Theme.of(context).copyWith(
+              colorScheme: const ColorScheme.dark(),
+            ),
+            child: child!,
+          );
+        },
         context: context,
         initialDate: DateTime.now(),
         firstDate: DateTime(2015, 8),
@@ -73,7 +81,11 @@ class CommonBloc extends Cubit<CommonState> {
     final toPlanet = state.toPlanetName;
 
     if (fromPlanet == toPlanet) {
-      emit(state.copyWith(distance: '0 Kms'));
+      emit(state.copyWith(
+        distance: '0 Kms',
+        distancePrice: '00',
+        arrivalDate: DateFormat('dd MMM y').format(DateTime.now()),
+      ));
     }
 
     if (PlanetDistances.distances.containsKey(fromPlanet) &&

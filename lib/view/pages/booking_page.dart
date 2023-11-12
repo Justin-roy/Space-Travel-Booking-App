@@ -41,8 +41,18 @@ class BookingPage extends StatelessWidget {
                 () {
                   navigator.pop();
                   navigator.push(
-                    MaterialPageRoute(
-                      builder: (context) => const QrTicketPage(),
+                    PageRouteBuilder(
+                      transitionDuration: const Duration(milliseconds: 700),
+                      reverseTransitionDuration:
+                          const Duration(milliseconds: 700),
+                      pageBuilder: (context, animation, secondaryAnimation) =>
+                          const QrTicketPage(),
+                      transitionsBuilder:
+                          (context, animation, secondaryAnimation, child) =>
+                              FadeTransition(
+                        opacity: animation,
+                        child: child,
+                      ),
                     ),
                   );
                 },
@@ -207,11 +217,14 @@ class _BookingPageViewWidget extends StatelessWidget {
                     ),
                   ],
                 ),
-                Image.asset(
-                  'assets/images/rocket.png',
-                  color: Colors.white,
-                  height: size.width,
-                  width: size.width * 0.55,
+                Hero(
+                  tag: 'rocket',
+                  child: Image.asset(
+                    'assets/images/rocket.png',
+                    color: Colors.white,
+                    height: size.width,
+                    width: size.width * 0.55,
+                  ),
                 ),
               ],
             ),
